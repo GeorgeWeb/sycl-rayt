@@ -60,4 +60,4 @@ To write the raytraced image data to an image file (currently `.ppm`), use:
 
 The output image (using the working `gpu_selector`) should look like this.
 
-![Output Image](https://raw.githubusercontent.com/GeorgeWeb/sycl-rayt-test/master/misc/output.jpg)
+![Output Image](https://raw.githubusercontent.com/GeorgeWeb/sycl-rayt-test/master/misc/output.jpg?token=AAL2JRFNDWCWBLRW6GXQF5C5A5XUO)
