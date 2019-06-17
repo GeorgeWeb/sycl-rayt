@@ -9,14 +9,14 @@ mkdir build && cd build
 cmake .. -GNinja -DComputeCpp_DIR=/path/to/computecpp && ninja
 ```
 
-### Possible warning on compilation about the memcpy/memse intrinsics added by the llvm optimizer:
+#### Possible warning on compilation about the memcpy/memse intrinsics added by the llvm optimizer:
 
 ```
 Building ComputeCpp integration header file /.../intel_sycl-rayt/build/sycl-rayt_sycl-rayt.cpp.sycl
 remark: [Computecpp:CC0027]: Some memcpy/memset intrinsics added by the llvm optimizer were replaced by serial functions. This is a workaround for OpenCL drivers that do not support those intrinsics. This may impact performance, consider using -no-serial-memop. [-Rsycl-serial-memop]
 ```
 
-### ComputeCpp **flag** to avoid the above warning: `-no-serial-memop`.
+#### ComputeCpp **flag** to avoid the above warning: `-no-serial-memop`.
 
 Use with the cmake script as follows:
 
@@ -38,7 +38,7 @@ More information about the compiler options can be found [here](https://develope
 
 ---
 
-## Changing the selected SYCL/OpenCL device
+### Changing the selected SYCL/OpenCL device
 
 Open `src/sycl-rayt.cpp`.
 
